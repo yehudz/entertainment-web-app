@@ -1,0 +1,8 @@
+@use './primaryButton.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: #10141E;
+}
