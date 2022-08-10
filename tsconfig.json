@@ -1,12 +1,12 @@
 {
+	"baseUrl": ".",
+	"paths": {
+		"$lib": [
+			"src/lib/*"
+		]
+	},
 	"extends": "./.svelte-kit/tsconfig.json",
 	"compilerOptions": {
-		"paths": {
-      "$lib": ["src/lib"],
-      "$lib/*": ["src/lib/*"],
-			"$styles/": ["src/styles"],
-			"$styles/*": ["src/styles/*"]
-    },
 		"allowJs": true,
 		"checkJs": true,
 		"esModuleInterop": true,

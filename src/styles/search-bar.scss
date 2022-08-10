@@ -1,0 +1,17 @@
+@use './variables';
+
+.search-bar-container {
+  .search-bar {
+    width: 100%;
+    background-color: transparent !important;
+    color: variables.$white;
+    &::placeholder {
+      font-weight: 300;
+    }
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid variables.$light-grey;
+
+    }
+  }  
+}
