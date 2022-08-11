@@ -46,11 +46,11 @@
       justify-center
     "
   >
-    <div class="text-white text-body-m mr-6">{message}</div>
+    <div class="text-white text-body-m mr-6 whitespace-nowrap">{message}</div>
     <a 
       data-testid="signup-button" 
       href="/signup" 
-      class="text-red text-body-m"
+      class="text-red text-body-m whitespace-nowrap"
     >
       {messageBtnText}
     </a>
