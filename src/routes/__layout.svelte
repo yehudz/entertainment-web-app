@@ -1,7 +1,5 @@
-<script>
-  import Input from "$lib/ui/Input.svelte";
+<script context="module">
   import "../styles/app.scss";
 </script>
 
-<slot />
-<Input placeholder="Email Address" inputType="email"/>
+<slot></slot> 
