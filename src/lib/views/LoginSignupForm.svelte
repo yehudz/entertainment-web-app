@@ -42,7 +42,13 @@
       inputType="password"
     />
   {/if}
-  <PrimaryButton />
+  <PrimaryButton 
+    buttonText={
+      title==='Login' ?
+      "Log in to you account" :
+      "Create an account"
+    }
+  />
   <div 
     data-testid="signup-container" 
     class="
@@ -66,7 +72,11 @@
     <a 
       data-testid="signup-button" 
       href="/signup" 
-      class="text-red text-body-m whitespace-nowrap"
+      class="
+        text-red 
+        text-body-m 
+        whitespace-nowrap
+      "
     >
       {messageBtnText}
     </a>

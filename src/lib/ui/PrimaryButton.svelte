@@ -1,7 +1,12 @@
+<script lang="ts">
+  export let buttonText: string = ''
+</script>
+
 <button 
   data-testid="login-button" 
   class="
-    text-white 
+    text-white
+    text-body-m 
     bg-red 
     primary-button 
     rounded-lg 
@@ -12,5 +17,5 @@
     mb-6
   "
   >
-  Log in to you account
+    {buttonText}
 </button>

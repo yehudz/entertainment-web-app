@@ -29,7 +29,14 @@
   }
 </script>
 
-<div class="input-container relative flex items-center text-body-m">
+<div 
+  class="
+    input-container 
+    relative 
+    flex 
+    items-center 
+    text-body-m"
+  >
   <input 
     data-testid={testId}
     on:keyup={removeError}
@@ -41,6 +48,15 @@
     class="input py-4 text-white pl-4"
   >
   {#if error}
-    <div class="text-red absolute top-4 right-4 text-body-m">Can't be empty</div>
+    <div 
+      class="
+        text-red 
+        absolute 
+        top-4 
+        right-4 
+        text-body-m"
+    >
+      Can't be empty
+    </div>
   {/if}
 </div>

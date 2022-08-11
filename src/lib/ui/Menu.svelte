@@ -29,7 +29,11 @@
       cursor-pointer
     "
   >
-    <img src="images/logo.svg" alt="Logo" class="h-6" >
+    <img 
+      src="images/logo.svg" 
+      alt="Logo" 
+      class="h-6" 
+    >
   </div>
   <nav 
     data-testid="main-menu-container"
@@ -55,7 +59,6 @@
       data-testid="movies-filter" 
       href="/movies"
       class="item"
-
     >
       <img 
         src="images/icon-nav-movies.svg" 
