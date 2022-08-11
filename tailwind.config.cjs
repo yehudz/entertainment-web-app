@@ -12,7 +12,7 @@ module.exports = {
       sm: ['18px', {fontWeight: '300'}],
       'md-light': ['24px', {fontWeight: '300'}],
       md: ['24px', {fontWeight: '500'}],
-      lg: ['32px', {fontWeight: '300'}],
+      lg: ['32px', {fontWeight: '200'}],
       'body-m': ['15px', {fontWeight: '300'}],
       'body-s': ['13px', {fontWeight: '300'}],
     },

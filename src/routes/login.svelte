@@ -12,5 +12,9 @@
     w-screen
   "
   >
-  <LoginSignupForm title="Login"/>
+  <LoginSignupForm 
+    title="Login" 
+    message="Don't have an account?"
+    messageBtnText="Sign Up"
+  />
 </div>

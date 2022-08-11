@@ -1,7 +1,7 @@
 describe('empty spec', () => {
   beforeEach(()=> {
     cy.visit('/login')
-    cy.viewport(320,	480)
+    cy.viewport(320,	568)
   })
   it('should have login form', () => {
     cy.get('[data-testid="login-container"]').should('exist')
