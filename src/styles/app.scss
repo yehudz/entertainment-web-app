@@ -1,5 +1,6 @@
-@use './primaryButton.scss';
-@use './search-bar.scss';
+@use './ui/primary-button.scss';
+@use './ui/search-bar.scss';
+@use './ui/input.scss';
 
 @tailwind base;
 @tailwind components;

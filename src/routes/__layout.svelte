@@ -1,7 +1,7 @@
 <script>
-  import Searchbar from "$lib/ui/Searchbar.svelte";
+  import Input from "$lib/ui/Input.svelte";
   import "../styles/app.scss";
 </script>
 
 <slot />
-<Searchbar />
+<Input placeholder="Email Address" inputType="email"/>
