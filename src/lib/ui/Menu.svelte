@@ -4,6 +4,7 @@
     menu-container 
     flex
     flex-row
+    lg:flex-col
     items-center
     justify-center
     h-56 
@@ -15,12 +16,31 @@
     lg:w-96
   "
 >
-  <div data-testid="logo" class="logo-container flex-1 ml-4 cursor-pointer">
+  <div 
+    data-testid="logo" 
+    class="
+      logo-container 
+      flex-1 
+      lg:flex-none
+      ml-4 
+      lg:ml-0
+      lg:mt-8
+      lg:mb-16
+      cursor-pointer
+    "
+  >
     <img src="images/logo.svg" alt="Logo" class="h-6" >
   </div>
   <nav 
     data-testid="main-menu-container"
-    class="flex flex-row flex-1 items-center justify-between"
+    class="
+      flex 
+      flex-row
+      lg:flex-col 
+      flex-1 
+      items-center 
+      justify-between
+    "
   >
     <a 
       data-testid="all-filter" 
@@ -65,12 +85,28 @@
   </nav>
   <div 
     data-testid="profile-button" 
-    class="profile flex-1 flex justify-end items-center "
+    class="
+      profile 
+      flex-1
+      flex 
+      justify-end 
+      items-center
+      lg:items-end
+      lg:mb-8
+    "
   >
     <img 
       src="images/image-avatar.png" 
       alt="Profile"
-      class="h-8 mr-4 rounded-full border border-white cursor-pointer"
+      class="
+        h-8 
+        mr-4 
+        lg:mr-0
+        rounded-full 
+        border 
+        border-white 
+        cursor-pointer
+      "
     >
   </div>
 </div>
