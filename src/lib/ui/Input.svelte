@@ -3,6 +3,7 @@
 
   export let placeholder: string = ''
   export let inputType: string = 'text'
+  export let testId: string = ''
   let value: string = ''
   let error: boolean = false
   let inputElement: HTMLInputElement
@@ -30,6 +31,7 @@
 
 <div class="input-container relative flex items-center text-body-m">
   <input 
+    data-testid={testId}
     on:keyup={removeError}
     on:blur={()=> checkInputValidation()}
     bind:value={value}
