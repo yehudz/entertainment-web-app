@@ -27,7 +27,15 @@ module.exports = {
       sans: ['Outfit'],
       serif: ['sans-serif'],
     },
-    extend: {},
+    extend: {
+      height: {
+        '56': '56px',
+        '72': '72px'
+      },
+      width: {
+        '96': '96px'
+      }
+    },
   },
   plugins: [],
 }

@@ -4,7 +4,9 @@
 
 <div class="loggedin-container">
   <Menu />
-  <slot>
-    
-  </slot>
+  <div class="content">
+    <slot>
+      
+    </slot>
+  </div>
 </div>
