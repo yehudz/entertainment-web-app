@@ -35,6 +35,13 @@
     placeholder="Password" 
     inputType="password"
   />
+  {#if title="Sign Up"}
+  <Input 
+    testId="repeat-password-input" 
+    placeholder="Repeat password" 
+    inputType="password"
+  />
+  {/if}
   <PrimaryButton />
   <div 
     data-testid="signup-container" 
