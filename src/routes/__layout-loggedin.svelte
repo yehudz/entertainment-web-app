@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Menu from "$lib/Menu.svelte";
+  import Menu from "$lib/ui/Menu.svelte";
 </script>
 
 <div class="loggedin-container">

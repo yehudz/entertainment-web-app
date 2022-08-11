@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Input from "./ui/Input.svelte";
-  import PrimaryButton from "./ui/PrimaryButton.svelte";
+  import Input from "../ui/Input.svelte";
+  import PrimaryButton from "../ui/PrimaryButton.svelte";
   export let title: string;
   export let message: string;
   export let messageBtnText: string
