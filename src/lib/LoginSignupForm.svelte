@@ -46,7 +46,16 @@
       justify-center
     "
   >
-    <div class="text-white text-body-m mr-6 whitespace-nowrap">{message}</div>
+    <div 
+      class="
+        text-white 
+        text-body-m 
+        mr-6 
+        whitespace-nowrap
+      "
+    >
+      {message}
+    </div>
     <a 
       data-testid="signup-button" 
       href="/signup" 
