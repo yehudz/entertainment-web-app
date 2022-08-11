@@ -2,6 +2,8 @@
 @use './ui/search-bar.scss';
 @use './ui/input.scss';
 @use './login-container.scss';
+@use './loggedin-container.scss';
+@use './ui/menu.scss';
 
 @tailwind base;
 @tailwind components;

@@ -1,0 +1,20 @@
+.menu-container {
+  nav {
+    min-width: 133px;
+    max-width: 133px;
+    @media screen and (min-width: 768px) {
+      min-width: 177px;
+      max-width: 177px;
+    }
+    @media screen and (min-width: 976px) {
+      max-height: 200px;
+    }
+
+    .item.active {
+      filter:  brightness(0) invert(1)
+    }
+    .item:hover {
+      filter:  brightness(0) invert(1)
+    }
+  }
+}
