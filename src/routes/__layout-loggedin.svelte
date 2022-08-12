@@ -4,7 +4,7 @@
 
 <div class="loggedin-container">
   <Menu />
-  <div class="content">
+  <div class="content overflow-hidden">
     <slot>
       
     </slot>

@@ -11,6 +11,8 @@
   class="
     treding-item-container
     relative
+    rounded-lg
+    overflow-hidden
   "
 >
   <div class="bookmark-icon">
