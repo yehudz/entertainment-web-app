@@ -9,13 +9,36 @@
 
 <div 
   class="
+    flex
+    flex-col
+    justify-end
     treding-item-container
     relative
     rounded-lg
+    p-4
     overflow-hidden
+    cursor-pointer
   "
 >
-  <div class="bookmark-icon">
+  <div 
+    class="
+      bookmark-icon
+      flex
+      flex-row
+      justify-center
+      items-center
+      absolute
+      top-2
+      right-4
+      w-8
+      h-8
+      bg-black/[.4]
+      hover:bg-black/[.7]
+      rounded-full
+      cursor-pointer
+      z-50
+    "
+  >
     <img 
       data-testid="trending-item-bookmark-button"
       src={
@@ -26,11 +49,26 @@
   </div>
   <img 
     data-testid="trending-item-image" 
-    class="absolute w-full top-0 left-0"
+    class="
+      absolute 
+      w-full 
+      top-0 
+      right-0
+      -z-50
+    "
     src={image} 
     alt={title}
   >
-  <div class="info-text-container">
+  <div 
+    class="
+      info-text-container
+      flex
+      flex-row
+      item-center
+      justify-between
+      w-40
+    "
+  >
     <div 
       data-testid="trending-item-year" 
       class="text-white text-body-s"
@@ -49,10 +87,11 @@
       "
     >
       <img 
+        class="mr-1"
         src={
           category === 'Movie' ? 
-          'images/icon-category-moviesvg' :
-          'image/icon-category-tv.svg'
+          'images/icon-category-movie.svg' :
+          'images/icon-category-tv.svg'
         } alt="Category">
       {category}
     </div>
@@ -65,7 +104,7 @@
   </div>
   <div 
     data-testid="trending-item-title" 
-    class="text-white text-md-light"
+    class="text-white text-s"
   >
     {title}
   </div>
