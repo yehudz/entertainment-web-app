@@ -1,0 +1,19 @@
+.thumbnail-container {
+  width: 47%;
+  height: auto;
+  @media screen and (max-width: 665px) {
+    max-width: 45%;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 31%;
+  }
+  @media screen and (min-width: 976px) {
+    max-width: 22.8%;
+  }
+  @media screen and (min-width: 1060px) {
+    max-width: 23%;
+  }
+  @media screen and (min-width: 1160px) {
+    max-width: 23.2%;
+  }
+}

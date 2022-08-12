@@ -1,4 +1,11 @@
 .menu-container {
+    position: sticky;
+    top: 0px;
+    z-index: 10001;
+  @media screen and (min-width: 976px) {
+    top: 24px;
+    height: calc(100vh - 48px) !important;
+  }
   nav {
     min-width: 133px;
     max-width: 133px;

@@ -1,4 +1,6 @@
 <script lang="ts">
+import BookmarkButton from "../BookmarkButton.svelte"
+
   export let image: string
   export let title: string
   export let year: number
@@ -20,33 +22,7 @@
     cursor-pointer
   "
 >
-  <div 
-    class="
-      bookmark-icon
-      flex
-      flex-row
-      justify-center
-      items-center
-      absolute
-      top-2
-      right-4
-      w-8
-      h-8
-      bg-black/[.4]
-      hover:bg-black/[.7]
-      rounded-full
-      cursor-pointer
-      z-50
-    "
-  >
-    <img 
-      data-testid="trending-item-bookmark-button"
-      src={
-      !bookmarked ? 
-      'images/icon-bookmark-empty.svg' :
-      'images/icon-bookmark-full.svg'
-      } alt="">
-  </div>
+  <BookmarkButton bookmark={bookmarked}/>
   <img 
     data-testid="trending-item-image" 
     class="
