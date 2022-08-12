@@ -1,6 +1,8 @@
 .menu-container {
-  @media screen and (min-width: 976px) {
     position: sticky;
+    top: 0px;
+    z-index: 10001;
+  @media screen and (min-width: 976px) {
     top: 24px;
     height: calc(100vh - 48px) !important;
   }
