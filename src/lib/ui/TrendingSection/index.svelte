@@ -3,7 +3,17 @@
   export let data: Movie[]
   import TrendingSectionItem from "./TrendingSectionItem.svelte";
 </script>
-<div class="text-lg text-white pl-4 my-4">Trending</div>
+<div 
+  class="
+    text-md-light
+    md:text-lg
+    text-white 
+    pl-4 
+    my-4
+  "
+>
+  Trending
+</div>
 <div 
   data-testid="trending-section" 
   class="
@@ -11,7 +21,7 @@
     flex-row
     trending-section
     overflow-x-scroll
-    gap-4
+    gap-6
     pl-4
   "
 >

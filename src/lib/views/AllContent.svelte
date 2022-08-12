@@ -3,10 +3,27 @@
   import Thumbnail from '$lib/ui/Thumbnail.svelte';
   export let movies: Movie[]
 </script>
-
+<div 
+  class="
+    text-md-light
+    md:text-lg
+    text-white 
+    pl-4 
+    my-4
+  "
+>
+  Recommended for you
+</div>
 <div
   data-testid="all-content"
-  class="content-container"
+  class="
+    flex
+    flex-row
+    flex-wrap
+    content-container 
+    pl-4
+    gap-6
+  "
 >
   {#each movies as content}
     <Thumbnail 

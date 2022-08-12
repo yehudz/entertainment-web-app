@@ -11,14 +11,21 @@ import BookmarkButton from "./BookmarkButton.svelte"
 
 <div
   data-testid="content-thumbnail" 
-  class="thumbnail-container"
+  class="
+    thumbnail-container
+    overflow-hidden
+  "
 >
   <BookmarkButton bookmark={bookmark}/>
   <div
     data-testid="thumbnail-image" 
-    class="image-container"
+    class="
+      image-container
+      rounded-lg
+      overflow-hidden
+    "
   >
-    <img src={image} alt={title}>
+    <img class="w-full" src={image} alt={title}>
   </div>
   <div
     data-testid="thumbnail-details" 
