@@ -104,7 +104,11 @@
   </div>
   <div 
     data-testid="trending-item-title" 
-    class="text-white text-s"
+    class="
+      text-white 
+      text-s
+      md:text-md
+    "
   >
     {title}
   </div>
