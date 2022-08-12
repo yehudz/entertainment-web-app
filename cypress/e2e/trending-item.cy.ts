@@ -28,7 +28,7 @@ describe('empty spec', () => {
     .should('exist')
   })
   it('should a bookmark button', ()=> {
-    cy.get('[data-testid="trending-item-bookmark-button"]')
+    cy.get('[data-testid="bookmark-button"]')
     .eq(0)
     .should('exist')
   })

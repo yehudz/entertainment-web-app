@@ -22,7 +22,7 @@
     "
   >
     <img 
-      data-testid="trending-item-bookmark-button"
+      data-testid="bookmark-button"
       src={
       !bookmark ? 
       'images/icon-bookmark-empty.svg' :

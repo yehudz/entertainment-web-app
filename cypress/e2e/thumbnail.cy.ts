@@ -16,6 +16,6 @@ describe('Thumbnail', () => {
     cy.get('[data-testid="thumbnail-details"]').should('exist')
   })
   it('should have bookmark bottom', () => {
-    cy.get('[data-testid="thumbnail-bookmark-button"]').should('exist')
+    cy.get('[data-testid="bookmark-button"]').should('exist')
   })
 })
