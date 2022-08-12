@@ -14,6 +14,7 @@ import BookmarkButton from "./BookmarkButton.svelte"
   class="
     thumbnail-container
     overflow-hidden
+    relative
   "
 >
   <BookmarkButton bookmark={bookmark}/>
@@ -29,21 +30,21 @@ import BookmarkButton from "./BookmarkButton.svelte"
   </div>
   <div
     data-testid="thumbnail-details" 
-    class="info-container"
+    class="info-container w-4/6 md:w-2/3"
   >
     <div 
       class="
         details
         flex
         flex-row
-        items-center
         justify-between
+        mt-4
       "
     >
       <div 
         class="
-          text-white
-          text-body-m
+          text-light-grey
+          text-body-s
         "
       >
         {year}
@@ -53,6 +54,7 @@ import BookmarkButton from "./BookmarkButton.svelte"
           flex 
           flex-row 
           items-center
+          mx-4
         "
       >
         <img 
@@ -63,11 +65,23 @@ import BookmarkButton from "./BookmarkButton.svelte"
           } 
           alt={category}
         >
-        <div class="text-white ml-2">
+        <div 
+          class="
+            text-light-grey
+            text-body-s 
+            ml-1
+            whitespace-nowrap
+          "
+        >
           {category}
         </div>
       </div>
-      <div class="text-white">
+      <div 
+        class="
+          text-light-grey
+          text-body-s
+        "
+      >
         {rating}
       </div>
     </div>
@@ -76,6 +90,9 @@ import BookmarkButton from "./BookmarkButton.svelte"
       class="
         text-white
         text-s
+        md:text-md
+        whitespace-nowrap
+        mt-2
       "
     >
       {title}
