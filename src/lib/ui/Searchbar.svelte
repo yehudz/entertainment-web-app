@@ -6,7 +6,9 @@
     search-bar-container 
     flex 
     flex-row 
-    items-center"
+    items-center
+    p-4
+  "
   >
   <div class="icon pr-4">
     <img 
@@ -16,11 +18,14 @@
   </div>
   <input 
     bind:value={value} 
-    placeholder="Search" 
+    placeholder="Search for movies and tv shows" 
     class="
       search-bar 
       text-white 
       text-md-light 
-      py-2"
+      py-2
+      placeholder:text-sm
+      md:placeholder:text-md-light
+    "
     >
 </div>

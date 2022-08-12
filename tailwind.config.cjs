@@ -10,7 +10,7 @@ module.exports = {
     },
     fontSize: {
       sm: ['18px', {fontWeight: '300'}],
-      'md-light': ['24px', {fontWeight: '300'}],
+      'md-light': ['24px', {fontWeight: '200'}],
       md: ['24px', {fontWeight: '500'}],
       lg: ['32px', {fontWeight: '200'}],
       'body-m': ['15px', {fontWeight: '300'}],
