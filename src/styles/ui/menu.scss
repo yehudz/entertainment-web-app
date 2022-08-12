@@ -1,4 +1,9 @@
 .menu-container {
+  @media screen and (min-width: 976px) {
+    position: sticky;
+    top: 24px;
+    height: calc(100vh - 48px) !important;
+  }
   nav {
     min-width: 133px;
     max-width: 133px;
