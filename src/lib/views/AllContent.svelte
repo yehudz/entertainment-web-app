@@ -28,7 +28,7 @@
   {#each movies as content}
     <Thumbnail 
       title={content.title}
-      image={content.thumbnail.regular.small}
+      image={content.thumbnail.regular.large}
       year={content.year}
       category={content.category}
       rating={content.rating}

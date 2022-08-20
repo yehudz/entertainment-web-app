@@ -28,7 +28,7 @@
     {#each data as item}
       <TrendingSectionItem 
         title={item.title}
-        image={item.thumbnail.regular.small}
+        image={item.thumbnail.regular.large}
         bookmarked={item.isBookmarked}
         rating={item.rating}
         year={item.year}
