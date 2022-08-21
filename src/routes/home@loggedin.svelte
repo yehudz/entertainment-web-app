@@ -8,9 +8,11 @@
 
   let trending = data.filter(item=>item.isTrending === true)
   let allContent = data.filter(item=>item.isTrending === false)
+  
   function onChange(e: any) {
     searchQuery = e.target.value
   }
+  
   $: searchResults = data.filter(item=> {
     if (!searchQuery) return item
     else if (
@@ -21,6 +23,7 @@
       return item
   })
 </script>
+
 <Searchbar 
   {onChange}
 />
@@ -43,4 +46,3 @@
     searchResults
   }
 />
- 
