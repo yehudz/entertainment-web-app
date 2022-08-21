@@ -8,4 +8,6 @@
 </script>
 
 <TrendingSection data={trending}/>
-<AllContent movies={allContent}/>
+<AllContent 
+  movies={allContent}
+/>
