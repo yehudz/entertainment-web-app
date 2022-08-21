@@ -8,7 +8,9 @@
   data-testid="movies-section"
   class="movies-section"
 >
-  <Searchbar />
+  <Searchbar 
+    placeholderText="Search for movies"
+  />
   <AllContent 
     movies={movies}
     sectionTitle="Movies"
