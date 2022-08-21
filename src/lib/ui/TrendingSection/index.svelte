@@ -22,7 +22,8 @@
     trending-section
     overflow-x-scroll
     gap-6
-    pl-4
+    ml-4
+    trending-section
   "
 >
     {#each data as item}
