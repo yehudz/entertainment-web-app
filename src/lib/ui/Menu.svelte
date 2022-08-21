@@ -75,7 +75,7 @@
       data-testid="tv-shows-filter" 
       href="/shows"
       class="item"
-      class:active={$page.url.pathname === '/tv-shows'}
+      class:active={$page.url.pathname === '/shows'}
     >
       <img 
         src="images/icon-nav-tv-series.svg" 
