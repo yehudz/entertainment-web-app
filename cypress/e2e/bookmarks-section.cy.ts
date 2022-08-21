@@ -9,6 +9,6 @@ describe('Bookmark section', ()=> {
     cy.get('[data-testid="bookedmark-filter"]').should('have.class', 'active')
   })
   it('should have two sections one for movie and one for tv shows', ()=> {
-    cy.get('[data-testid="bookmarks-section"]').children().should('have.length', 4)
+    cy.get('[data-testid="bookmarks-section"]').children().should('have.length', 5)
   })
 })

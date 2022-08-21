@@ -1,12 +1,46 @@
 <script lang="ts">
-import BookmarkButton from "./BookmarkButton.svelte"
-
+  import data from '../../data.json';
+  import BookmarkButton from "./BookmarkButton.svelte"
+  import PlayButtonOverlay from "./PlayButtonOverlay.svelte";
   export let title: string
   export let year: number
   export let category: string
   export let rating: string
   export let image: string
   export let bookmark: boolean
+
+  let showOverlay = false
+
+  function toggleOverlay() {
+    showOverlay = !showOverlay
+  }
+
+  function toggleBookmark(e: any) {
+    data.find((o, i) => {
+      if (o.title === title) {
+          data[i] = { 
+            title,
+            year,
+            rating,
+            category,
+            thumbnail: {
+              regular: {
+                small: image,
+                medium: image,
+                large: image,
+              },
+              trending: {
+                small: image,
+                large: image
+              },
+            },
+            isTrending: false,
+            isBookmarked: e.detail.bookmark
+          };
+          return true; // stop searching
+      }
+    });
+  }
 </script>
 
 <div
@@ -15,18 +49,37 @@ import BookmarkButton from "./BookmarkButton.svelte"
     thumbnail-container
     overflow-hidden
     relative
+    cursor-pointer
   "
 >
-  <BookmarkButton bookmark={bookmark}/>
+  <BookmarkButton 
+    bookmark={bookmark}
+    on:trigger={toggleBookmark}
+  />
   <div
     data-testid="thumbnail-image" 
+    on:mouseenter={toggleOverlay}
+    on:mouseleave={toggleOverlay}
     class="
       image-container
       rounded-lg
       overflow-hidden
+      relative
     "
   >
-    <img class="w-full" src={image} alt={title}>
+    {#if showOverlay}
+      <PlayButtonOverlay />
+    {/if}
+    <img
+      class={`
+        w-full 
+        ${showOverlay ? 
+        'opacity-30' : 
+        ''
+        }
+      `} 
+      src={image} 
+      alt={title}>
   </div>
   <div
     data-testid="thumbnail-details" 
