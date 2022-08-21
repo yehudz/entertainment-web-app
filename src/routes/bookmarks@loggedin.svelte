@@ -13,9 +13,6 @@
   data-testid="bookmarks-section"
   class="bookmarks-section"
 >
-  <Searchbar 
-    placeholderText="Search for bookmarked shows"
-  />
   <AllContent 
     movies={bookmarkMovies}
     sectionTitle="Bookmarked Movies"

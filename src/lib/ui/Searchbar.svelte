@@ -1,6 +1,5 @@
 <script lang="ts">
   let value: string = ''
-  export let placeholderText: string = "Search for movies and tv shows"
 </script>
 <div 
   class="
@@ -19,7 +18,7 @@
   </div>
   <input 
     bind:value={value} 
-    placeholder={placeholderText}
+    placeholder="Search for movies and tv shows" 
     class="
       search-bar 
       text-white 
