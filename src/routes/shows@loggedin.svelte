@@ -8,6 +8,9 @@
   data-testid="shows-section"
   class="shows-section"
 >
+  <Searchbar 
+    placeholderText="Search for TV series"
+  />
   <AllContent 
     movies={series}
     sectionTitle="TV Series"
