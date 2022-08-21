@@ -22,6 +22,7 @@
     data-testid="searchbar-placeholder"
     bind:value={value} 
     placeholder={placeholderText}
+    bind:value={value} 
     class="
       search-bar 
       text-white 
