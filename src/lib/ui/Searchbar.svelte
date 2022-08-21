@@ -2,6 +2,7 @@
   let value: string = ''
 </script>
 <div 
+  data-testid="searchbar"
   class="
     search-bar-container 
     flex 
@@ -17,6 +18,7 @@
     >
   </div>
   <input 
+    data-testid="searchbar-placeholder"
     bind:value={value} 
     placeholder="Search for movies and tv shows" 
     class="
