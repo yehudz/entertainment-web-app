@@ -24,7 +24,6 @@
     bind:value={value} 
     placeholder={placeholderText}
     on:input={onChange}
-    bind:value={value} 
     class="
       search-bar 
       text-white 
