@@ -19,7 +19,6 @@
       .toLowerCase())) 
       return item
   })
-
 </script>
 <div 
   data-testid="shows-section"

@@ -19,6 +19,7 @@
       .toLowerCase())) 
       return item
   })
+
 </script>
 <div 
   data-testid="movies-section"
