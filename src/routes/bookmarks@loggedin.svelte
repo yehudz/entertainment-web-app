@@ -7,4 +7,5 @@
 
 <AllContent 
   movies={allContent}
+  sectionTitle="Bookmarked"
 />

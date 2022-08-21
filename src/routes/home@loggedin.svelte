@@ -9,5 +9,6 @@
 
 <TrendingSection data={trending}/>
 <AllContent 
+  sectionTitle="Recommend for you"
   movies={allContent}
 />

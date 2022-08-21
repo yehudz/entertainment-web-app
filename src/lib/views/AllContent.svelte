@@ -2,6 +2,7 @@
   import type {Movie} from '../../typings/common.types';
   import Thumbnail from '$lib/ui/Thumbnail.svelte';
   export let movies: Movie[]
+  export let sectionTitle:  string
 </script>
 <div 
   class="
@@ -12,7 +13,7 @@
     my-4
   "
 >
-  Recommended for you
+  {sectionTitle}
 </div>
 <div
   data-testid="all-content"
