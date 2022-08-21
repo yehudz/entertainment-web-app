@@ -8,4 +8,7 @@
 </script>
 
 <TrendingSection data={trending}/>
-<AllContent movies={allContent}/>
+<AllContent 
+  sectionTitle="Recommend for you"
+  movies={allContent}
+/>

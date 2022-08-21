@@ -1,3 +1,7 @@
+<script>
+  import { page } from '$app/stores';
+ </script>
+
 <div 
   data-testid="navigation-container"
   class="
@@ -49,7 +53,8 @@
     <a 
       data-testid="all-filter" 
       href="/home" 
-      class="active item"
+      class="item"
+      class:active={$page.url.pathname === '/home'}
     >
       <img 
         src="images/icon-nav-home.svg" 
@@ -59,6 +64,7 @@
       data-testid="movies-filter" 
       href="/movies"
       class="item"
+      class:active={$page.url.pathname === '/movies'}
     >
       <img 
         src="images/icon-nav-movies.svg" 
@@ -69,6 +75,7 @@
       data-testid="tv-shows-filter" 
       href="/shows"
       class="item"
+      class:active={$page.url.pathname === '/tv-shows'}
     >
       <img 
         src="images/icon-nav-tv-series.svg" 
@@ -79,6 +86,7 @@
       data-testid="bookedmark-filter" 
       href="/bookmarks"
       class="item"
+      class:active={$page.url.pathname === '/bookmarks'}
     >
       <img 
         src="images/icon-nav-bookmark.svg" 
