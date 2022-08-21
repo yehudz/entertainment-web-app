@@ -1,7 +1,9 @@
 <script lang="ts">
   let value: string = ''
+  export let placeholderText: string = "Search for movies and tv shows"
 </script>
 <div 
+  data-testid="searchbar"
   class="
     search-bar-container 
     flex 
@@ -17,8 +19,10 @@
     >
   </div>
   <input 
+    data-testid="searchbar-placeholder"
     bind:value={value} 
-    placeholder="Search for movies and tv shows" 
+    placeholder={placeholderText}
+    bind:value={value} 
     class="
       search-bar 
       text-white 

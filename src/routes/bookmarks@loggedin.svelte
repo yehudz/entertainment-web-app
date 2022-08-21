@@ -1,7 +1,7 @@
 <script lang="ts">
   import data from '../data.json'
   import AllContent from '$lib/views/AllContent.svelte'
-  
+  import Searchbar from '$lib/ui/Searchbar.svelte';
   let bookmarkMovies = data.filter(item=>{
     if (item.isBookmarked && item.category === 'Movie') return item
   })
@@ -13,6 +13,9 @@
   data-testid="bookmarks-section"
   class="bookmarks-section"
 >
+  <Searchbar 
+    placeholderText="Search for bookmarked shows"
+  />
   <AllContent 
     movies={bookmarkMovies}
     sectionTitle="Bookmarked Movies"
