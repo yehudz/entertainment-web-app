@@ -3,6 +3,7 @@
   export let placeholderText: string = "Search for movies and tv shows"
 </script>
 <div 
+  data-testid="searchbar"
   class="
     search-bar-container 
     flex 
@@ -18,6 +19,7 @@
     >
   </div>
   <input 
+    data-testid="searchbar-placeholder"
     bind:value={value} 
     placeholder={placeholderText}
     class="
