@@ -1,6 +1,7 @@
 <script lang="ts">
   let value: string = ''
   export let placeholderText: string = "Search for movies and tv shows"
+  export let onChange: any
 </script>
 <div 
   data-testid="searchbar"
@@ -22,6 +23,8 @@
     data-testid="searchbar-placeholder"
     bind:value={value} 
     placeholder={placeholderText}
+    on:input={onChange}
+    bind:value={value} 
     class="
       search-bar 
       text-white 
