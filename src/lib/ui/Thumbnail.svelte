@@ -1,4 +1,5 @@
 <script lang="ts">
+  import data from '../../data.json';
   import BookmarkButton from "./BookmarkButton.svelte"
   import PlayButtonOverlay from "./PlayButtonOverlay.svelte";
   export let title: string
@@ -14,6 +15,33 @@
     showOverlay = !showOverlay
   }
 
+  function toggleBookmark(e: any) {
+    data.find((o, i) => {
+      if (o.title === title) {
+          data[i] = { 
+            title,
+            year,
+            rating,
+            category,
+            thumbnail: {
+              regular: {
+                small: image,
+                medium: image,
+                large: image,
+              },
+              trending: {
+                small: image,
+                large: image
+              },
+            },
+            isTrending: false,
+            isBookmarked: e.detail.bookmark
+          };
+          return true; // stop searching
+      }
+    });
+  }
+
 </script>
 
 <div
@@ -25,7 +53,10 @@
     cursor-pointer
   "
 >
-  <BookmarkButton bookmark={bookmark}/>
+  <BookmarkButton 
+    bookmark={bookmark}
+    on:trigger={toggleBookmark}
+  />
   <div
     data-testid="thumbnail-image" 
     on:mouseenter={toggleOverlay}
