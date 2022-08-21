@@ -25,6 +25,7 @@
     relative
     rounded-lg
     p-4
+    mb-2
     overflow-hidden
     cursor-pointer
   `}

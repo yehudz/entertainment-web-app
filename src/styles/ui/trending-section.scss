@@ -1,0 +1,22 @@
+.trending-section {
+  &::-webkit-scrollbar {
+    margin-left: 8px;
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+      border-radius: 100vh;
+      background: #5A698F;
+  }
+
+  &::-webkit-scrollbar-thumb {
+      background: #161D2F;
+      border-radius: 100vh;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+      background: rgba(#161D2F, .8);
+  }
+}
