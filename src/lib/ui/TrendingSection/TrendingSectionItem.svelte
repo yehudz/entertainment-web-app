@@ -1,16 +1,23 @@
 <script lang="ts">
-import BookmarkButton from "../BookmarkButton.svelte"
-
+  import BookmarkButton from "../BookmarkButton.svelte"
+  import PlayButtonOverlay from "../PlayButtonOverlay.svelte";
   export let image: string
   export let title: string
   export let year: number
   export let rating: string
   export let category: string
   export let bookmarked: boolean = false
+
+  let showOverlay = false
+
+  function toogleOverlay() {
+    showOverlay = !showOverlay
+  }
+
 </script>
 
 <div 
-  class="
+  class={`
     flex
     flex-col
     justify-end
@@ -20,18 +27,26 @@ import BookmarkButton from "../BookmarkButton.svelte"
     p-4
     overflow-hidden
     cursor-pointer
-  "
+  `}
+   
+  on:mouseenter={toogleOverlay}
+  on:mouseleave={toogleOverlay}
 >
   <BookmarkButton bookmark={bookmarked}/>
+  {#if showOverlay}
+    <PlayButtonOverlay />
+  {/if}
   <img 
     data-testid="trending-item-image" 
-    class="
+    class={`
       absolute 
       w-full 
       top-0 
       right-0
       -z-50
-    "
+      ${showOverlay ? 'opacity-30' : ''}
+    `}
+      
     src={image} 
     alt={title}
   >

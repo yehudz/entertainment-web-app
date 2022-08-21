@@ -1,12 +1,19 @@
 <script lang="ts">
-import BookmarkButton from "./BookmarkButton.svelte"
-
+  import BookmarkButton from "./BookmarkButton.svelte"
+  import PlayButtonOverlay from "./PlayButtonOverlay.svelte";
   export let title: string
   export let year: number
   export let category: string
   export let rating: string
   export let image: string
   export let bookmark: boolean
+
+  let showOverlay = false
+
+  function toggleOverlay() {
+    showOverlay = !showOverlay
+  }
+
 </script>
 
 <div
@@ -15,18 +22,34 @@ import BookmarkButton from "./BookmarkButton.svelte"
     thumbnail-container
     overflow-hidden
     relative
+    cursor-pointer
   "
 >
   <BookmarkButton bookmark={bookmark}/>
   <div
     data-testid="thumbnail-image" 
+    on:mouseenter={toggleOverlay}
+    on:mouseleave={toggleOverlay}
     class="
       image-container
       rounded-lg
       overflow-hidden
+      relative
     "
   >
-    <img class="w-full" src={image} alt={title}>
+    {#if showOverlay}
+      <PlayButtonOverlay />
+    {/if}
+    <img
+      class={`
+        w-full 
+        ${showOverlay ? 
+        'opacity-30' : 
+        ''
+        }
+      `} 
+      src={image} 
+      alt={title}>
   </div>
   <div
     data-testid="thumbnail-details" 
