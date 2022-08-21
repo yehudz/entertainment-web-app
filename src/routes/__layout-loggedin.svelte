@@ -6,9 +6,6 @@ import Searchbar from "$lib/ui/Searchbar.svelte";
 <div class="loggedin-container">
   <Menu />
   <div class="content overflow-hidden">
-    <Searchbar />
-    <slot>
-      
-    </slot>
+    <slot />
   </div>
 </div>
