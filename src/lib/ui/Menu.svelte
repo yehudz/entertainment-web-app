@@ -1,0 +1,123 @@
+<script>
+  import { page } from '$app/stores';
+ </script>
+
+<div 
+  data-testid="navigation-container"
+  class="
+    menu-container 
+    flex
+    flex-row
+    lg:flex-col
+    items-center
+    justify-center
+    h-56 
+    w-full 
+    bg-dark-grey
+    md:h-72
+    md:rounded-lg
+    lg:h-screen
+    lg:w-96
+  "
+>
+  <div 
+    data-testid="logo" 
+    class="
+      logo-container 
+      flex-1 
+      lg:flex-none
+      ml-4 
+      lg:ml-0
+      lg:mt-8
+      lg:mb-16
+      cursor-pointer
+    "
+  >
+    <img 
+      src="images/logo.svg" 
+      alt="Logo" 
+      class="h-6" 
+    >
+  </div>
+  <nav 
+    data-testid="main-menu-container"
+    class="
+      flex 
+      flex-row
+      lg:flex-col 
+      flex-1 
+      items-center 
+      justify-between
+    "
+  >
+    <a 
+      data-testid="all-filter" 
+      href="/home" 
+      class="item"
+      class:active={$page.url.pathname === '/home'}
+    >
+      <img 
+        src="images/icon-nav-home.svg" 
+        alt="Home">
+    </a>
+    <a 
+      data-testid="movies-filter" 
+      href="/movies"
+      class="item"
+      class:active={$page.url.pathname === '/movies'}
+    >
+      <img 
+        src="images/icon-nav-movies.svg" 
+        alt="Movies"
+      >
+    </a>
+    <a 
+      data-testid="tv-shows-filter" 
+      href="/shows"
+      class="item"
+      class:active={$page.url.pathname === '/tv-shows'}
+    >
+      <img 
+        src="images/icon-nav-tv-series.svg" 
+        alt="TV Shows"
+      >
+    </a>
+    <a 
+      data-testid="bookedmark-filter" 
+      href="/bookmarks"
+      class="item"
+      class:active={$page.url.pathname === '/bookmarks'}
+    >
+      <img 
+        src="images/icon-nav-bookmark.svg" 
+        alt="Bookmarks"
+      >
+    </a>
+  </nav>
+  <div 
+    data-testid="profile-button" 
+    class="
+      profile 
+      flex-1
+      flex 
+      justify-end 
+      items-center
+      lg:items-end
+      lg:mb-8
+    "
+  >
+    <img 
+      src="images/image-avatar.png" 
+      alt="Profile"
+      class="
+        h-8 
+        mr-4 
+        lg:mr-0
+        rounded-full 
+        border 
+        border-white 
+        cursor-pointer
+      "
+    >
+  </div>
+</div>

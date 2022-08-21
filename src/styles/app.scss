@@ -1,0 +1,15 @@
+@use './ui/primary-button.scss';
+@use './ui/search-bar.scss';
+@use './ui/input.scss';
+@use './login-container.scss';
+@use './loggedin-container.scss';
+@use './ui/menu.scss';
+@use './ui/trending-item.scss';
+@use './ui/thumbnail.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: #10141E;
+}
